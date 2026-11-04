@@ -1,15 +1,33 @@
 .callout {
     /* write declarations here */
+    max-width: 400px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #247;
+    color: white;
 }
 
 .callout img {
     /* write declarations here */
+    float: right;
+    margin: 5px 5px;
+    border: 2px solid wheat;
+    padding: 1px;
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
 }
 
 blockquote {
     /* write declarations here */
+    margin: 5px;
 }
 
 cite {
     /* write declarations here */
+    display: block;
+    border-top: 1px solid wheat;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 16px;
 }
