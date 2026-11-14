@@ -76,6 +76,7 @@ article {
     background-color: var(--accent1-color);
     color: var(--primary-color);
     opacity: 0.8;
+    padding: 1px;
 }
 
 .hero article img {
