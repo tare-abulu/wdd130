@@ -59,7 +59,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -68,6 +68,7 @@ h1 {
     opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--primary-color);
+    font: var(--heading-font);
 }
 
 article {
@@ -80,9 +81,15 @@ article {
 }
 
 .hero article img {
+    margin: 0 5px;
     float: right;
     width: 125px;
     height: auto;
+    box-shadow: 0 0 30px var(--accent2-color);
+}
+
+footer {
+    color: var(--secondary-color);
 }
 
 footer nav a img {
