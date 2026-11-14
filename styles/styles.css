@@ -40,11 +40,29 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 100px;
 
 }
 
+main p {
+    clear: left;
+    width: 75%;
+    margin: 20px;
+}
+
 aside {
-    width: 20rem;
+    /* width: 20rem; */
+    text-align: center;
+    position: relative;
+
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 100px;
+    opacity: 0.9;
+
 }
 
 aside img {
@@ -67,4 +85,5 @@ footer {
     padding: 1rem;
     background-color: #eee;
     color: #333;
+    width: 20rem;
 }
