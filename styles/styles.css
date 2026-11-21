@@ -10,71 +10,105 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 main {
-    max-width: 100%;
-    clear: right;
+    max-width: 640px;
+    /* clear: right; */
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 h1 {
-
+    border-bottom: 1px solid #222;
     color: darkblue;
     margin: 10px;
     font-size: 20px;
 }
 
+aside {
+    /* width: 20rem; */
+    width: 20rem;
+    /* margin: 10px 0; */
+    /* text-align: center; */
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+}
+
+aside img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 0 10px 0;
+
+}
+
+aside p {
+    padding: 5px;
+}
+
+aside h2 {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 main img {
-    width: 100px;
+    width: 150px;
     height: var(--height);
     border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 100px;
+    margin: 10px;
 
 }
 
 main p {
     clear: left;
-    width: 75%;
+    width: auto;
     margin: 20px;
 }
 
-aside {
-    /* width: 20rem; */
-    text-align: center;
-    position: relative;
-
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 100px;
-    opacity: 0.9;
-
-}
-
-aside img {
-    width: 200px;
-    height: var(--height);
-
+p {
+    padding: 0;
 }
 
 footer {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border-top: var(--border);
     text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+    padding: 5px;
+    margin: 2rem auto;
+
 }
 
 /* Class Selector */
@@ -86,4 +120,9 @@ footer {
     background-color: #eee;
     color: #333;
     width: 20rem;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
 }
